@@ -1,0 +1,47 @@
+name = input("What is your name?: ")
+print("welcome to the game", name)
+
+
+
+
+
+
+
+answer = input(
+    "You are on a dirt road, it has come to an end and you can go left or right. Which way would you like to go?: ").lower()
+
+if answer == "left":
+    answer = input("You come across the river and you can walk around it or swimm acros.Type walk to walk and swimm  to swimm across: ")
+    if answer == "swimm":        
+        print("swimm!")
+        print("You swamm across and were eaten by an alligator")
+        
+    elif answer == "walk":
+        if answer == "swimm":
+            print("walk")
+            print("You walked for miles and ran out water, You lost the game")
+    else:
+        print("Not a valid option you los")
+
+elif answer == "right":
+    answer = input("You come across to bridge. It looks wobbly and do you want cross or head back(cross/back?: ").lower.()
+
+   if answer == "bakc":        
+        print("bakc!")
+        print("You go back and lose")
+        
+    elif answer == "cross":
+        answer = input("You crose the bridge and meet the stranger. Do you talk to them?: Yes/No?:? ").lower.()
+        if answer == "yes":
+            print("You talk to the stranger and give you gold. You WIN")
+        elif answer == "no":
+            print("print you ignore  the stranger and they are offended.You LOSE!")
+        else:
+            print("Not  a valid option you lose")
+        
+        print("You walked for miles and ran out water, You lost the game")
+else:
+    print("Not a valid option")
+
+
+print("Thanks for trying", name)
